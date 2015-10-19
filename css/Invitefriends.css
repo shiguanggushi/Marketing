@@ -69,14 +69,26 @@ body{
     font-size: 0;
 }
 .fcontent{
-	margin-top: 1.825rem;
+	margin-top: 2.825rem;
 	margin-bottom: 1rem;
 	font-size: 0.6rem;
 	font-family: "宋体";
 }
-
-
-
+.fcontent .big-con{
+   text-align: center;
+   font-size: 0.9rem;
+}
+.fcontent .big-con .fs-qian{
+	color: #F03F17;
+	font-size: 1.2rem;
+	font-weight: 600;
+	font-family: "微软雅黑";
+}
+.fcontent .big-con .fs-number{
+	font-size: 3.2rem;
+	font-family: arial;
+	color: #F03F17;
+}
 
 
 
