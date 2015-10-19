@@ -89,7 +89,14 @@ body{
 	font-family: arial;
 	color: #F03F17;
 }
-
+.fcontent .big-con .fs-gz{
+	margin-top: 0.2rem;
+	text-align: left;
+	font-size: 0.7rem;
+	line-height: 1.0rem;
+	color: #727171;	
+	padding: 0 0.2rem;
+}
 
 
 
