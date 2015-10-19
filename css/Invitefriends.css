@@ -36,7 +36,7 @@ body{
 .friends-head .friends-hright{
 	width: 15%;
 }
-.friends-head .friends-hcontent{
+.friends-head .friends-hconter{
 	width: 70%;
 }
 .friends-head .friends-hleft a{
@@ -53,7 +53,7 @@ body{
 	height: 100%;
 	border-radius:50%;
 }
-.friends-head .friends-hcontent{
+.friends-head .friends-hconter{
 	width: 70%;
 	text-align: center;
 	font-family: "黑体";
@@ -61,3 +61,27 @@ body{
 	color: #000000;
 	line-height: 1.825rem;
 }
+/*
+ * content
+ */
+.friends-art{
+	width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.465rem;
+    overflow: hidden;
+    font-size: 0;
+}
+.fcontent{
+	margin-top: 1.825rem;
+	margin-bottom: 1rem;
+	font-size: 0.6rem;
+	font-family: "宋体";
+}
+
+
+
+
+
+
+
+
