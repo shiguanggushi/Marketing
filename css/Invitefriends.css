@@ -36,9 +36,6 @@ body{
 .friends-head .friends-hright{
 	width: 15%;
 }
-.friends-head .friends-hconter{
-	width: 70%;
-}
 .friends-head .friends-hleft a{
 	display: inline-block;
     margin-left: 0.946rem;
