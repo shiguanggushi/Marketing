@@ -44,3 +44,46 @@
 	font-size: .7rem;
 	font-family: "宋体";
 }
+.in-my-People ul{
+	list-style-type: none;
+	text-align: left;
+}
+.in-my-People ul li{
+	width: 100%;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	padding: 0 0.6rem;
+	box-sizing: border-box;
+}
+.in-my-People ul li .time{
+	float: right;
+	text-align: right;
+	font-size: 0.7rem;
+	
+}
+.in-my-People ul li .name{
+	font-size: .7rem;
+	font-family: "宋体";
+}
+/*纪录数量*/
+.reco{
+	width: 100%;
+	height: 1.825rem;
+	background-color: #296EB6;
+	border-bottom: 0.05rem solid #727171;
+	box-sizing: border-box;
+}
+.re-bottom{
+	background: #296EB6;
+	position: fixed;
+	bottom: 0;
+	z-index: 9001;
+}
+.re-bottom .re-rs{
+	width: 100%;
+	line-height: 1.825rem;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.8rem;
+	font-family: "微软雅黑";
+}
