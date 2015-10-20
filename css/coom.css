@@ -1,0 +1,45 @@
+@charset "utf-8";
+/*公共头部*/
+.coom-head{
+	width: 100%;
+	height: 1.825rem;
+	background-color: #FFFFFF;
+	border-bottom: 0.05rem solid #727171;
+	box-sizing: border-box;
+}
+.c-head{
+	background: #FFFFFF;
+	position: fixed;
+	top: 0;
+	z-index: 9001;
+}
+.coom-head div{
+	height: 100%;
+	float: left;
+}
+.coom-head .coom-hleft,
+.coom-head .coom-hright{
+	width: 15%;
+}
+.coom-head .coom-hleft a{
+	display: inline-block;
+    margin-left: 0.946rem;
+}
+.coom-hleft .c-back{
+	width: 0.77rem;
+	height: 0.6205rem;
+	margin-top: 0.2rem;
+}
+.coom-hleft .c-back img{
+	width: 100%;
+	height: 100%;
+	border-radius:50%;
+}
+.coom-head .coom-hconter{
+	width: 70%;
+	text-align: center;
+	font-family: "黑体";
+	font-size: 0.90rem;
+	color: #000000;
+	line-height: 1.825rem;
+}
