@@ -95,8 +95,25 @@ body{
 	font-size: 0.7rem;
 	line-height: 1.0rem;
 	color: #727171;	
-	padding: 0 0.2rem;
+	padding:0.2rem;
 }
-
-
+.fcontent .big-con .fs-lj{
+	margin-top: 0.8rem;
+	text-align: left;
+	padding:0.2rem;
+}
+.fs-lj ul{
+	list-style-type: none;
+}
+.fs-lj li{
+	line-height:1.2rem;
+	font-size: 0.7rem;
+	color: #000000;
+}
+.fs-lj li a{
+	float: right;
+	text-align: right;
+	padding-right: .6rem;
+	color: #727171;
+}
 
