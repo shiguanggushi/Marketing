@@ -1,4 +1,20 @@
 @charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+}
+html{
+	font-size: 62.5%;
+	width: 100%;
+	height: auto;
+}
+body{
+	background-color: #eaeaea;
+	width: 100%;
+	height: auto;
+}
 /*公共头部*/
 .coom-head{
 	width: 100%;
