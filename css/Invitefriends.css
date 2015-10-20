@@ -13,7 +13,7 @@ html{
 body{
 	background-color: #eaeaea;
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 .friends-head{
 	width: 100%;
@@ -116,6 +116,7 @@ body{
 	padding-right: .6rem;
 	color: #727171;
 }
+
 footer .ter-yq{
 	background-color: #296eb6;
     display: block;
@@ -144,4 +145,5 @@ footer .ter-sc{
     font-weight: 500;
     color: #fff;
     margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
 }
