@@ -13,7 +13,7 @@ html{
 body{
 	background-color: #eaeaea;
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 .friends-head{
 	width: 100%;
@@ -69,7 +69,7 @@ body{
     font-size: 0;
 }
 .fcontent{
-	margin-top: 2.825rem;
+	margin-top: 2.222rem;
 	margin-bottom: 1rem;
 	font-size: 0.6rem;
 	font-family: "宋体";
@@ -144,6 +144,8 @@ footer .ter-sc{
     font-family: "黑体";
     font-weight: 500;
     color: #fff;
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
+}
+footer .ter-kong{
+	height: 0.56rem;
+	width: 100%;
 }
