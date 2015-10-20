@@ -12,6 +12,58 @@
 		<link rel="stylesheet" href="css/record.css" />
 		<script type="text/javascript" src="js/jquery-2.1.3.min.js" ></script>
 		<script type="text/javascript" src="js/register.js" ></script>
+		<script>
+		 var pageIndex = 1;
+		 var pageType;
+         $(document).ready(function() {
+			$(function(){
+              $.ajax({
+			  type:"POST",
+			  data:"pageType=9&pageIndex="+(pageIndex),
+			  url:"php/Listpage.php",
+			  dataType:"html",
+			  success: function(data){
+				 
+				 $(".recorddate").append(data);
+			  }
+				});
+			});
+			var i;
+			function pullDownAction() {
+				$.ajax({
+					type: "POST",
+					url: "php/Listpage.php",
+					data: "pageType=9&pageIndex=" + (++pageIndex),
+					dataType: "html",
+					success: function(msg) {
+					//$("button[name='but']").unbind("click");/*当页面刷新了以后，就停止此页面的 点赞方法 */
+						if (msg.length==0) {
+							alert('数据已经全部加载！');
+						} else {
+							$(".recorddate").append(msg);
+						}
+						$(".loadingbox").hide();
+						i = 0;
+					},
+					error: function() {
+						alert("提取失败！");
+					}
+				});
+			}
+			$(document).ready(function() {
+				$(window).on("scroll", function() {
+					if (i == 1) {
+						return;
+					}
+					if (($(window).height() + $(window).scrollTop()) >= $(document).height()) {
+						i = 1;
+						$(".loadingbox").show();
+						setTimeout(pullDownAction, 3000);
+					}
+				});
+			});
+		 });
+		</script>
 	</head>
 	<body>
 		<header>
@@ -37,7 +89,7 @@
 				<div class="my-People-top my-People">
 					<a class="top-a">邀请时间</a><span>我邀请的人</span>
 				</div>
-                  <ul>
+                  <ul class="recorddate">
                   	<li><a class="time">2015-09-19</a><span class="name">智库中国</span></li>
                   	<li><a class="time">2015-09-19</a><span class="name">智库中国</span></li>
                   	<li><a class="time">2015-09-19</a><span class="name">智库中国</span></li>
@@ -48,11 +100,9 @@
                   	<li><a class="time">2015-09-19</a><span class="name">智库中国</span></li>
                   	<li><a class="time">2015-09-19</a><span class="name">智库中国</span></li>
                   	<li><a class="time">2015-09-19</a><span class="name">智库中国</span></li>
-                  	<li><a class="time">2015-09-19</a><span class="name">智库中国</span></li>
-                  	<li><a class="time">2015-09-19</a><span class="name">智库中国</span></li>
-                  	<li><a class="time">2015-09-19</a><span class="name">智库中国</span></li>
-                  	<li><a class="time">2015-09-19</a><span class="name">智库中国</span></li>
-                  	<li><a class="time">2015-09-19</a><span class="name">智库中国</span></li>
+                  	 <div class="loadingbox">
+						<div class="loading"></div>
+					</div>
                   </ul>
 			</div>
 		</article>
