@@ -71,6 +71,7 @@
     color: #fff;
 }
 .money-boot{
+	box-sizing: border-box;
 	bottom: 0;
 	position: absolute;
 }
