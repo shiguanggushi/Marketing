@@ -71,14 +71,15 @@
     color: #fff;
 }
 .money-boot{
-	box-sizing: border-box;
-	bottom: 0;
-	position: absolute;
+
 }
 .money-foot{
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 0.6rem;
+	position: absolute;
+	bottom: 0;
+	background: red;
 }
 
