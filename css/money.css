@@ -75,7 +75,7 @@
 	margin: 0 auto;
 	text-align: center;
 	font-size: 0.6rem;
-	top:96%;
-	position: absolute;
+	margin-top: 68%;
+	bottom: 0;
 }
 
