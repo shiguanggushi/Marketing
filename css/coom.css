@@ -8,12 +8,12 @@
 html{
 	font-size: 62.5%;
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 body{
 	background-color: #eaeaea;
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 /*公共头部*/
 .coom-head{
