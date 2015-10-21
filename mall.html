@@ -12,6 +12,58 @@
 		<link rel="stylesheet" href="css/mall.css" />
 	    <script type="text/javascript" src="js/jquery-2.1.3.min.js" ></script>
 		<script type="text/javascript" src="js/register.js" ></script>
+		<script>
+		 var pageIndex = 1;
+		 var pageType;
+         $(document).ready(function() {
+			$(function(){
+              $.ajax({
+			  type:"POST",
+			  data:"pageIndex="+(pageIndex),
+			  url:"manifest.json",
+			  dataType:"html",
+			  success: function(data){
+				 console.log(data);
+				 $(".mall-list").append(data);
+			  }
+				});
+			});
+			var i;
+			function pullDownAction() {
+				$.ajax({
+					type: "POST",
+					url: "manifest.json",
+					data: "pageIndex=" + (++pageIndex),
+					dataType: "html",
+					success: function(msg) {
+					//$("button[name='but']").unbind("click");/*当页面刷新了以后，就停止此页面的 点赞方法 */
+						if (msg.length==0) {
+							alert('数据已经全部加载！');
+						} else {
+							$(".mall-list").append(msg);
+						}
+						$(".loadingbox").hide();
+						i = 0;
+					},
+					error: function() {
+						alert("提取失败！");
+					}
+				});
+			}
+			$(document).ready(function() {
+				$(window).on("scroll", function() {
+					if (i == 1) {
+						return;
+					}
+					if (($(window).height() + $(window).scrollTop()) >= $(document).height()) {
+						i = 1;
+						$(".loadingbox").show();
+						setTimeout(pullDownAction, 3000);
+					}
+				});
+			});
+		 });
+		</script>
 	</head>
 	<body>
 		<header>
@@ -27,7 +79,7 @@
 		</header>
 		<article class="mall-content mall-conter">
 			<div class="mall-list">
-				<div class="mall-item">
+			  <div class="mall-item">
 				<div class="mall-img">
                 <img src="img/redbg/red.png"/>
 				</div>
@@ -41,7 +93,75 @@
                 	<a href="###" class="mall-llgm">立即购买</a>
                 </div>
 				</div>
+			  </div>
+			  <!--1-->
+			  <div class="mall-item">
+				<div class="mall-img">
+                <img src="img/redbg/red.png"/>
 				</div>
+				<!--详细介绍-->
+				<div class="mall-xx">
+                <a href="###" class="mall-name">商品名称</a>
+                <p class="mall-spxq">这里是商品详这里是商品详情我不知道写折是啊蓝色阿卡</p>
+                <div class="mall-ys">
+                	<p><font class="mall-jfhq">2500积分/25元</font></p>
+                	<span class="mall-number">已售25件</span>
+                	<a href="###" class="mall-llgm">立即购买</a>
+                </div>
+				</div>
+			  </div>
+			  			  <!--2-->
+			  <div class="mall-item">
+				<div class="mall-img">
+                <img src="img/redbg/red.png"/>
+				</div>
+				<!--详细介绍-->
+				<div class="mall-xx">
+                <a href="###" class="mall-name">商品名称</a>
+                <p class="mall-spxq">这里是商品详这里是商品详情我不知道写折是啊蓝色阿卡</p>
+                <div class="mall-ys">
+                	<p><font class="mall-jfhq">2500积分/25元</font></p>
+                	<span class="mall-number">已售25件</span>
+                	<a href="###" class="mall-llgm">立即购买</a>
+                </div>
+				</div>
+			  </div>
+			  			  <!--3-->
+			  <div class="mall-item">
+				<div class="mall-img">
+                <img src="img/redbg/red.png"/>
+				</div>
+				<!--详细介绍-->
+				<div class="mall-xx">
+                <a href="###" class="mall-name">商品名称</a>
+                <p class="mall-spxq">这里是商品详这里是商品详情我不知道写折是啊蓝色阿卡</p>
+                <div class="mall-ys">
+                	<p><font class="mall-jfhq">2500积分/25元</font></p>
+                	<span class="mall-number">已售25件</span>
+                	<a href="###" class="mall-llgm">立即购买</a>
+                </div>
+				</div>
+			  </div>
+			  			  <!--4-->
+			  <div class="mall-item">
+				<div class="mall-img">
+                <img src="img/redbg/red.png"/>
+				</div>
+				<!--详细介绍-->
+				<div class="mall-xx">
+                <a href="###" class="mall-name">商品名称</a>
+                <p class="mall-spxq">这里是商品详这里是商品详情我不知道写折是啊蓝色阿卡</p>
+                <div class="mall-ys">
+                	<p><font class="mall-jfhq">2500积分/25元</font></p>
+                	<span class="mall-number">已售25件</span>
+                	<a href="###" class="mall-llgm">立即购买</a>
+                </div>
+				</div>
+			  </div>
+			  <!--h刷新-->
+			   <div class="loadingbox">
+						<div class="loading"></div>
+			   </div>
 			</div>
 		</article>
 	</body>
