@@ -70,13 +70,13 @@
     font-weight: 500;
     color: #fff;
 }
+.money-boot{
+	bottom: 0;
+}
 .money-foot{
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 0.6rem;
-	margin-top: 68%;
-	bottom: 0;
-	position: absolute;
 }
 
