@@ -1,0 +1,51 @@
+@charset "utf-8";
+.money-content{
+	width: 100%;
+    box-sizing: border-box;
+    padding: 0 0;
+    overflow: hidden;
+    font-size: 0;
+}
+.money-conter{
+	margin-top: 1.825rem;
+	margin-bottom: 1.825rem;
+	font-size: 0.6rem;
+	font-family: "宋体";
+}
+.money-conter .money-yue{
+	width: 100%;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	border-bottom: 1px solid #EAEAEA;
+	background-color: #FFFFFF;
+}
+.money-yue .yue-sp{
+	padding-left: 1.0rem;
+	font-size:0.8rem ;
+}
+.money-yue .yue-zt{
+	color: #FF0000;
+	font-family: "微软雅黑";
+	padding-left: 0.4rem;
+}
+.money-conter .money-zfb{
+	width: 100%;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	background-color: #296EB6;
+}
+.money-zfb .yue-zfb{
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+	font-size:0.9rem ;
+	padding-left: 1.0rem;
+}
+.money-yue .yue-zhm{
+	font-size: 0.8rem;
+	padding-left:1.0rem ;
+}
+.money-yue input[type=search]{
+	width: 6.2rem;
+	height: 0.8rem;
+	border: 1px solid red;
+}

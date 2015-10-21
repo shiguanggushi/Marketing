@@ -19,11 +19,11 @@
 			$(function(){
               $.ajax({
 			  type:"POST",
-			  data:"pageType=9&pageIndex="+(pageIndex),
-			  url:"php/Listpage.php",
+			  data:"pageIndex="+(pageIndex),
+			  url:"manifest.json",
 			  dataType:"html",
 			  success: function(data){
-				 
+				 console.log(data);
 				 $(".recorddate").append(data);
 			  }
 				});
@@ -32,8 +32,8 @@
 			function pullDownAction() {
 				$.ajax({
 					type: "POST",
-					url: "php/Listpage.php",
-					data: "pageType=9&pageIndex=" + (++pageIndex),
+					url: "manifest.json",
+					data: "pageIndex=" + (++pageIndex),
 					dataType: "html",
 					success: function(msg) {
 					//$("button[name='but']").unbind("click");/*当页面刷新了以后，就停止此页面的 点赞方法 */
