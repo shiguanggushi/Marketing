@@ -72,7 +72,7 @@
 }
 .money-boot{
 	bottom: 0;
-	margin-top: 6.66rem;
+	position: absolute;
 }
 .money-foot{
 	width: 100%;
