@@ -41,7 +41,7 @@
 }
 .mall-item .mall-img img{
 	width: 90%;
-	height: 80%;
+	height: 82%;
 	padding-top: 0.4rem;
 }
 .mall-item .mall-xx .mall-name{
@@ -53,7 +53,8 @@
 }
 .mall-item .mall-xx .mall-spxq{
 	width: 100%;
-	height: 1.2rem;
+	height: auto;
+	font-size: 0.5rem;
 }
 .mall-ys{
 	margin-top: 0.2rem;
@@ -63,11 +64,11 @@
 }
 .mall-ys .mall-jfhq{
 	color: #ff7e00;
-	font-size: 0.6rem;
+	font-size: 0.5rem;
 }
 .mall-ys .mall-number{
 	color: #afafaf;
-	font-size: 0.6rem;
+	font-size: 0.5rem;
 }
 .mall-ys .mall-llgm{
 	display: block;
