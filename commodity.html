@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+		<meta name="description" content="SEO-内容描述" />
+        <meta name="keywords" content="SEO-关键词" />
+        <link rel="stylesheet" href="css/coom.css" />
+		<title>商品详情</title>
+		<link rel="stylesheet" href="css/commodity.css" />
+		<script type="text/javascript" src="js/jquery-2.1.3.min.js" ></script>
+		<script type="text/javascript" src="js/register.js" ></script>
+		<script type="text/javascript" src="js/TouchSlide.1.1.js" ></script>
+	</head>
+	<body>
+		<header>
+		<div class="coom-head c-head">
+			<div class="coom-hleft">
+				<a href="mall.html" class="c-back">
+					<img src="img/Return.png"/>
+				</a>
+			</div>
+			<div class="coom-hconter"><span>商品详情</span></div>
+		    <div class="coom-hright"></div>
+		</div>
+		</header>
+		<article class="commodity-content commodity-conter">
+			<div id="focus" class="focus">
+				<div class="hd">
+					<ul></ul>
+				</div>
+				<div class="bd">
+					<ul>
+							<li><a href="#"><img _src="img/m1.jpg" src="img/blank.png" /></a></li>
+							<li><a href="#"><img _src="img/m2.jpg" src="img/blank.png"/></a></li>
+							<li><a href="#"><img _src="img/m3.jpg" src="img/blank.png"/></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</article>
+			<script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#focus",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					mainCell:".bd ul", 
+					effect:"left", 
+					autoPlay:false,//自动播放
+					autoPage:true, //自动分页
+					switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+				});
+			</script>
+	</body>
+</html>
