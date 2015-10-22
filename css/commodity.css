@@ -8,7 +8,6 @@
 }
 .commodity-conter{
 	margin-top: 1.825rem;
-	margin-bottom: 1.825rem;
 	font-size: 0.6rem;
 	font-family: "宋体";
 }
@@ -173,4 +172,33 @@
 	line-height: 1.0rem;
 	font-size: 0.5rem;
 	text-indent: 2em;
+}
+.commodity-spsx ul{
+	padding:0.6rem 1.8rem;
+	float: left;
+}
+.commodity-spsx ul li{
+	line-height: 1.2rem;
+}
+footer{
+	display: block;
+}
+.dity-foot{
+	width: 100%;
+	height: 2.8rem;
+	margin: 0.9rem 0;
+}
+.dity-bottom{
+	background-color: #296eb6;
+    display: block;
+    width: 14.8rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.0rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    margin: 0 auto;
+    font-family: "黑体";
+    font-weight: 500;
+    color: #fff;
 }
