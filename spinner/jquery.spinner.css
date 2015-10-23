@@ -68,7 +68,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 	width: 1.6rem;
 	height: 1.2rem;
 	color: #e5312a;
-	font: 0.8rem Arial bold;
+	font: 1.0rem Arial bold;
 	padding: 0;
 	outline: none;
 	background-color: #DDDDDD;
@@ -81,7 +81,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 
 .spinner .decrease[disabled] {
 	cursor: default;
-	background-color: #F1F1F1;
+	background-color: #FFFFFF;
 	cursor: not-allowed;
 }
 
@@ -92,17 +92,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 
 .spinner .value {
 	width: 1.6rem;
-	height: 1.18rem;
+	height: 1.20rem;
 	border: none;
 	font-family: Arial;
 	font-size: 0.7rem;
 	padding: 0px;
-	-webkit-box-shadow: 0 3px 3px -4px #aaa;
-	-moz-box-shadow: 0 3px 3px -4px #aaa;
-	box-shadow: 0 3px 3px -4px #aaa
-}
-.spinner .value:focus{
-	border: 0;
+	background-color: #F1F1F1;
 }
 .spinner .value.passive {
 	color: #919191
