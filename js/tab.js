@@ -20,13 +20,4 @@ $(document).ready(function() {
 			}
 		});
 	});
-	
-//	//复选框效果
-//	$(".checkboxes input[type=checkbox]").on("change",function(){
-//		if($(this).prop("checked")){
-//			$(this).next().css("background-image","url(./img/checkbox2.png)");
-//		}else{
-//			$(this).next().css("background-image","url(./img/checkbox1.png)");
-//		}
-//	});
 });
