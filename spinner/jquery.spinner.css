@@ -91,7 +91,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 	cursor: pointer;
 	border: 1px solid #f1f1f1;
 	background-color: #F1F1F1;
-	margin-left: 0.1rem;
+	margin-left: 0.1rem; 
 }
 
 .spinner .value {
