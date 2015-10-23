@@ -97,4 +97,15 @@
 	float: right;
 	margin-top: 0.42rem;
 }
-
+.order-xiala{
+	float: right;
+}
+.order-select{
+	width: 4.2rem;
+	height: 1.2rem;
+	border: 1px solid #F1F1F1;
+}
+.order-select .option{
+	line-height: 1.2rem;
+	border-bottom: 1px solid #F1F1F1;
+}
