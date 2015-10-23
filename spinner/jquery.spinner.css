@@ -48,13 +48,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 }*/
 
 .spinner {
-	height: 1.05rem;
-	width: 3.8rem;
+	height: 1.2rem;
+	width: 5.0rem;
 	overflow: hidden;
 	*zoom: 1;
-	/*-webkit-box-shadow: 0 3px 3px -4px #aaa;
-	-moz-box-shadow: 0 3px 3px -4px #aaa;
-	box-shadow: 0 3px 3px -4px #aaa*/
 }
 
 .spinner button,.spinner .value {
@@ -68,18 +65,18 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 
 .spinner button {
 	border: none;
-	width: 1.0rem;
-	height: 0.8rem;
+	width: 1.6rem;
+	height: 1.2rem;
 	color: #e5312a;
 	font: 0.6rem Arial bold;
 	padding: 0;
-	outline: none
+	outline: none;
+	background-color: #DDDDDD;
 }
 
 .spinner .decrease {
 	cursor: pointer;
 	border: 1px solid #f1f1f1;
-	/*text-indent: -10000px*/
 }
 
 .spinner .decrease[disabled] {
@@ -89,19 +86,23 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 }
 
 .spinner .increase {
-	background-position: 0 0;
 	cursor: pointer;
+	border: 1px solid #f1f1f1;
 }
 
 .spinner .value {
-	width: 1.2rem;
-	height: 0.78rem;
+	width: 1.6rem;
+	height: 1.18rem;
 	border: none;
 	font-family: Arial;
 	padding: 0px;
-	border: 1px solid #F1F1F1;
+	-webkit-box-shadow: 0 3px 3px -4px #aaa;
+	-moz-box-shadow: 0 3px 3px -4px #aaa;
+	box-shadow: 0 3px 3px -4px #aaa
 }
-
+.spinner .value:focus{
+	border: 0;
+}
 .spinner .value.passive {
 	color: #919191
 }
