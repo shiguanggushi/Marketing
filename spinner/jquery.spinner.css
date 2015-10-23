@@ -76,7 +76,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 	background-color: #F1F1F1;
 	margin-right: 0.1rem;
 	font-family: "宋体";
-	font-size: 1.2rem;
+	font-size: 0.8rem;
+	font-weight: bold;
 }
 
 .spinner .decrease[disabled] {
@@ -91,7 +92,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 	background-color: #F1F1F1;
 	margin-left: 0.1rem; 
 	font-family: "宋体";
-	font-size: 0.6rem;
+	font-size: 0.7rem;
+	font-weight: bold;
 }
 
 .spinner .value {
