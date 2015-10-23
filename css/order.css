@@ -101,11 +101,8 @@
 	float: right;
 }
 .order-select{
-	width: 4.2rem;
+	width: 4.6rem;
 	height: 1.2rem;
 	border: 1px solid #F1F1F1;
-}
-.order-select .option{
-	line-height: 1.2rem;
-	border-bottom: 1px solid #F1F1F1;
+	font-size: 0.6rem;
 }
