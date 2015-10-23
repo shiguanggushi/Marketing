@@ -68,7 +68,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 	width: 1.6rem;
 	height: 1.2rem;
 	color: #e5312a;
-	font: 0.6rem Arial bold;
+	font: 0.8rem Arial bold;
 	padding: 0;
 	outline: none;
 	background-color: #DDDDDD;
@@ -95,6 +95,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 	height: 1.18rem;
 	border: none;
 	font-family: Arial;
+	font-size: 0.7rem;
 	padding: 0px;
 	-webkit-box-shadow: 0 3px 3px -4px #aaa;
 	-moz-box-shadow: 0 3px 3px -4px #aaa;
