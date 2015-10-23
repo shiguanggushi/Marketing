@@ -29,7 +29,7 @@
       textField.wrap(container)
 
       var increaseButton = $('<button class="increase">+</button>').click(function () { changeValue(1) })
-      var decreaseButton = $('<button class="decrease">—</button>').click(function () { changeValue(-1) })
+      var decreaseButton = $('<button class="decrease">-</button>').click(function () { changeValue(-1) })
 
       validate(textField)
       container.data('lastValidValue', options.value)
