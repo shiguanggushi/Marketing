@@ -43,10 +43,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 	display: block
 }
 
-/*.spinner-sprite,.spinner .decrease,.spinner .decrease[disabled],.spinner .increase,.spinner .value,.spinner .value.passive {
-	background: url('spinner-sf0d5bd965d.png') no-repeat
-}*/
-
 .spinner {
 	height: 1.2rem;
 	width: 5.0rem;
