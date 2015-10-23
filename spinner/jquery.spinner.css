@@ -106,9 +106,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 	background-color: #F1F1F1;
 }
 .spinner .value.passive {
-	color: #919191
+	color: #F1F1F1;
 }
 
 .spinner .error,.spinner .invalid {
-	background: #aa0000;
+	background: #F1F1F1;
 }
