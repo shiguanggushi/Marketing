@@ -82,7 +82,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 .spinner .decrease[disabled] {
 	cursor: default;
 	background-color: #FFFFFF;
-	cursor: not-allowed;
+	cursor: not-allowed; 
 }
 
 .spinner .increase {
