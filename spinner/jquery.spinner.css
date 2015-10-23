@@ -77,17 +77,21 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 .spinner .decrease {
 	cursor: pointer;
 	border: 1px solid #f1f1f1;
+	background-color: #F1F1F1;
+	margin-right: 0.1rem;
 }
 
 .spinner .decrease[disabled] {
 	cursor: default;
-	background-color: #FFFFFF;
+	background-color: #F1F1F1;
 	cursor: not-allowed; 
 }
 
 .spinner .increase {
 	cursor: pointer;
 	border: 1px solid #f1f1f1;
+	background-color: #F1F1F1;
+	margin-left: 0.1rem;
 }
 
 .spinner .value {
