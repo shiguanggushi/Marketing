@@ -92,7 +92,7 @@
 	display: block;
 	padding-top: 0.3rem;
 	text-decoration:none;
-	font-size: 0.76rem;
+	font-size: 0.70rem;
 	color: #231815;
 }
 .ex-item .ex-xx .ex-spxq{
@@ -100,9 +100,6 @@
 	height: auto;
 	font-size: 0.58rem;
 	line-height: 0.7rem;
-}
-.ex-ys{
-	margin-top: 0.1rem;
 }
 .ex-ys .ex-p{
 	width: 100%;
