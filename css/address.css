@@ -27,3 +27,22 @@
 	font-size: 0.6rem;
 	padding-left: 0.2rem;
 }
+.address-dizhi{
+	width: 100%;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	background: white;
+	padding: 0.2rem 0.6rem;
+	color: #919191;
+}
+.address-dizhi span{
+	float: left;
+}
+.address-dizhi textarea{
+	float: right;
+	width: 10.15rem;
+	height: 2.0rem;
+	resize: none;
+	font-size: 0.6rem;
+	border: 0.05rem solid #F1F1F1;
+}
