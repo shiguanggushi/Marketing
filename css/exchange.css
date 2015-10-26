@@ -1,0 +1,41 @@
+@charset "utf-8";
+.exchange-content{
+	width: 100%;
+    box-sizing: border-box;
+    padding: 0 0;
+    overflow: hidden;
+    font-size: 0;
+}
+.exchange-conter{
+	margin-top: 1.825rem;
+	margin-bottom: 1.825rem;
+	font-size: 0.6rem;
+	font-family: "宋体";
+}
+.ex-change{
+	width: 100%;
+	height: 2.6rem;
+	background-color: #FFFFFF;
+	border-bottom: 0.05rem solid #F1F1F1;
+}
+.ex-tb{
+	display: block;
+	text-align: center;
+	line-height: 2.6rem;
+	font-family: "微软雅黑";
+	font-size: 0.68rem;
+}
+.ex-tb:before{
+	content: '√';
+	width: 0.9rem;
+	height: 0.9rem;
+	display: inline-block;
+	border-radius: 0.9rem;
+	background-color: #ff4300;
+    font-size: 0.54rem;
+    text-align: center;
+	line-height: 0.9rem;
+	font-weight: 600;
+	color: white;
+	margin-right: 0.2rem;
+}
