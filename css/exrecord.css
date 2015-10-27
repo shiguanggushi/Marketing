@@ -34,7 +34,9 @@
 .er-list .er-img img{
 	width: 90%;
 	height: 82%;
-	padding-top: 0.2rem;
+	margin-top: 0.2rem;
+	border-radius: 0.3rem;
+	display: block;
 }
 .er-content .er-item{
 	width: 70%;
