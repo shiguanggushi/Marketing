@@ -1,0 +1,32 @@
+@charset "utf-8";
+.manage-content{
+	width: 100%;
+    box-sizing: border-box;
+    padding: 0 0;
+    overflow: hidden;
+    font-size: 0;
+}
+.manage-conter{
+	margin-top: 1.825rem;
+	margin-bottom: 1.6rem;
+	font-size: 0.6rem;
+	font-family: "宋体";
+}
+.addnewmanage{
+	width: 100%;
+	height: 2.2rem;
+	background-color: #296EB6;
+	text-align: center;
+}
+.manage-add{
+	color: white;
+	font-size: 0.66rem;
+	font-family: "微软雅黑";
+	line-height: 2.0rem;
+}
+.manage-add:before{
+	content: "+";
+	font-family: "微软雅黑";
+	font-size: 1.0rem;
+	padding-right: 0.2rem;
+}
