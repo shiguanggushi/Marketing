@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+		<meta name="description" content="SEO-内容描述" />
+        <meta name="keywords" content="SEO-关键词" />
+        <link rel="stylesheet" href="css/coom.css" />
+		<title>兑换记录</title>
+		<link rel="stylesheet" href="css/exrecord.css" />
+		<script type="text/javascript" src="js/jquery-2.1.3.min.js" ></script>
+		<script type="text/javascript" src="js/register.js" ></script>
+		<script>
+		 var pageIndex = 1;
+		 var pageType;
+         $(document).ready(function() {
+			$(function(){
+              $.ajax({
+			  type:"POST",
+			  data:"pageIndex="+(pageIndex),
+			  url:"manifest.json",
+			  dataType:"html",
+			  success: function(data){
+				 console.log(data);
+				 $(".er-list-item").append(data);
+			  }
+				});
+			});
+			var i;
+			function pullDownAction() {
+				$.ajax({
+					type: "POST",
+					url: "manifest.json",
+					data: "pageIndex=" + (++pageIndex),
+					dataType: "html",
+					success: function(msg) {
+						if (msg.length==0) {
+							alert('数据已经全部加载！');
+						} else {
+							$(".er-list-item").append(msg);
+						}
+						$(".loadingbox").hide();
+						i = 0;
+					},
+					error: function() {
+						alert("提取失败！");
+					}
+				});
+			}
+			$(document).ready(function() {
+				$(window).on("scroll", function() {
+					if (i == 1) {
+						return;
+					}
+					if (($(window).height() + $(window).scrollTop()) >= $(document).height()) {
+						i = 1;
+						$(".loadingbox").show();
+						setTimeout(pullDownAction, 3000);
+					}
+				});
+			});
+		 });
+		</script>
+	</head>
+	<body>
+		<!--top-->
+		<header>
+		<div class="coom-head c-head">
+			<div class="coom-hleft">
+				<a href="exchange.html" class="c-back">
+					<img src="img/Return.png"/>
+				</a>
+			</div>
+			<div class="coom-hconter"><span>兑换记录</span></div>
+		    <div class="coom-hright"></div>
+		</div>
+		</header>
+		<article class="er-content order-conter">
+			<div class="er-list-item">
+			<div class="er-list">
+				<div class="er-img">
+					<img src="img/xin.png"/>
+				</div>
+				<div class="er-item">
+					<p><h4>ICO图标出售</h4></p>
+					<p>数量：<em>3</em></p>
+					<p>金额：<em>15000积分</em></p>
+					<p>兑换时间：<em>2015-10-27</em><span>已兑换</span></p>
+				</div>
+			</div>
+			<!--列表-->
+			<div class="er-list">
+				<div class="er-img">
+					<img src="img/m1.jpg"/>
+				</div>
+				<div class="er-item">
+					<p><h4>ICO图标出售</h4></p>
+					<p>数量：<em>3</em></p>
+					<p>金额：<em>15000积分</em></p>
+					<p>兑换时间：<em>2015-10-27</em><span>已兑换</span></p>
+				</div>
+			</div>
+			<!--列表-->
+			<div class="er-list">
+				<div class="er-img">
+					<img src="img/100.jpg"/>
+				</div>
+				<div class="er-item">
+					<p><h4>ICO图标出售</h4></p>
+					<p>数量：<em>3</em></p>
+					<p>金额：<em>15000积分</em></p>
+					<p>兑换时间：<em>2015-10-27</em><span>已兑换</span></p>
+				</div>
+			</div>
+			<!--列表-->
+			<div class="er-list">
+				<div class="er-img">
+					<img src="img/xin.png"/>
+				</div>
+				<div class="er-item">
+					<p><h4>ICO图标出售</h4></p>
+					<p>数量：<em>3</em></p>
+					<p>金额：<em>15000积分</em></p>
+					<p>兑换时间：<em>2015-10-27</em><span>已兑换</span></p>
+				</div>
+			</div>
+			<!--列表-->
+			<div class="er-list">
+				<div class="er-img">
+					<img src="img/m1.jpg"/>
+				</div>
+				<div class="er-item">
+					<p><h4>ICO图标出售</h4></p>
+					<p>数量：<em>3</em></p>
+					<p>金额：<em>15000积分</em></p>
+					<p>兑换时间：<em>2015-10-27</em><span>已兑换</span></p>
+				</div>
+			</div>
+			<!--列表-->
+			<div class="er-list">
+				<div class="er-img">
+					<img src="img/100.jpg"/>
+				</div>
+				<div class="er-item">
+					<p><h4>ICO图标出售</h4></p>
+					<p>数量：<em>3</em></p>
+					<p>金额：<em>15000积分</em></p>
+					<p>兑换时间：<em>2015-10-27</em><span>已兑换</span></p>
+				</div>
+			</div>
+			<!--列表-->
+			<div class="er-list">
+				<div class="er-img">
+					<img src="img/100.jpg"/>
+				</div>
+				<div class="er-item">
+					<p><h4>ICO图标出售</h4></p>
+					<p>数量：<em>3</em></p>
+					<p>金额：<em>15000积分</em></p>
+					<p>兑换时间：<em>2015-10-27</em><span>已兑换</span></p>
+				</div>
+			</div>
+			<!--列表-->
+			<div class="er-list">
+				<div class="er-img">
+					<img src="img/100.jpg"/>
+				</div>
+				<div class="er-item">
+					<p><h4>ICO图标出售</h4></p>
+					<p>数量：<em>3</em></p>
+					<p>金额：<em>15000积分</em></p>
+					<p>兑换时间：<em>2015-10-27</em><span>已兑换</span></p>
+				</div>
+			</div>
+			<!--列表-->
+			<!--刷新-->
+			   <div class="loadingbox">
+						<div class="loading"></div>
+			   </div>
+			</div>
+		</article>
+	</body>
+</html>
