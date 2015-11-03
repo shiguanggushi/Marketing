@@ -13,7 +13,7 @@
 	    <script type="text/javascript" src="js/jquery-2.1.3.min.js" ></script>
 		<script type="text/javascript" src="js/register.js" ></script>
 		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
-		<script type="text/javascript" src="layer/layer.js" ></script>
+		<script type="text/javascript" src="layer.m/layer.m.js" ></script>
 		<script>
 		 var pageIndex = 1;
 		 var pageType;
@@ -48,7 +48,13 @@
 					},
 					error: function() {
 //						alert("提取失败！");
-                        layer.msg('提取失败',{icon: 4});
+                        //layer.msg('提取失败!',{icon: 2});
+//                      layer.alert('酷毙了', {icon: 1});
+                        layer.open({
+						    content: '提取失败！',
+						    style: 'background-color:#fFF; color:#09C1FF; border:none;text-align: center;',
+						    time: 2
+						});
                         return;
 					}
 				});
@@ -61,6 +67,10 @@
 					if (($(window).height() + $(window).scrollTop()) >= $(document).height()) {
 						i = 1;
 						$(".loadingbox").show();
+//						layer.open({
+//						    type: 2,
+//						    content: '加载测试中'
+//						});
 						setTimeout(pullDownAction, 3000);
 					}
 				});
@@ -169,7 +179,15 @@
 		</article>
 		<script>
 			function gm(){
-				layer.msg("双十一还没到，刀就提起来了！");
+				layer.open({
+			    title: '提示',
+			    content: '您确定要购买本产品吗？',
+			    btn: ['嗯', '不要'],
+			    yes: function(index){
+			        location.reload();
+			        layer.close(index);
+			    }
+			});
 			}
 		</script>
 	</body>
