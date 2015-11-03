@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="css/mall.css" />
 	    <script type="text/javascript" src="js/jquery-2.1.3.min.js" ></script>
 		<script type="text/javascript" src="js/register.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="layer/layer.js" ></script>
 		<script>
 		 var pageIndex = 1;
 		 var pageType;
@@ -36,7 +38,6 @@
 					data: "pageIndex=" + (++pageIndex),
 					dataType: "html",
 					success: function(msg) {
-					//$("button[name='but']").unbind("click");/*当页面刷新了以后，就停止此页面的 点赞方法 */
 						if (msg.length==0) {
 							alert('数据已经全部加载！');
 						} else {
@@ -46,7 +47,9 @@
 						i = 0;
 					},
 					error: function() {
-						alert("提取失败！");
+//						alert("提取失败！");
+                        layer.msg("提取失败");
+                        return;
 					}
 				});
 			}
@@ -164,10 +167,5 @@
 			   </div>
 			</div>
 		</article>
-		<script>
-		$(".mall-llgm").click(function(){
-			alert("看见就想点，是不是要剁手了？剁手、剁手、剁手…</br>每次提醒别人以后，就会觉得胸前的红领巾更加鲜艳了！");
-		});
-		</script>
 	</body>
 </html>
